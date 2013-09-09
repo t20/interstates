@@ -43,7 +43,7 @@ def get_states(lat_lng_pairs):
 if __name__ == '__main__':
     if len(sys.argv) != 3:
         print 'Please pass two addresses (strings) following the program name.'
-        print 'Example: $python "Minneapolis, MN" "La Jolla, CA"'.format(sys.argv[0])
+        print 'Example: $python {0} "Minneapolis, MN" "La Jolla, CA"'.format(sys.argv[0])
         exit()
     params = {'origin': sys.argv[1], 'destination': sys.argv[2]}
     print 'Finding shortest path...'
